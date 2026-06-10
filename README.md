@@ -86,7 +86,7 @@ git init
 ```bash
 echo "odo_vs_dc/husky_odom_real.bag" >> .gitignore
 ```
-### 3. Create and paste the English README content above
+### 3. Create and paste the README content above
 ```bash
 nano README.md
 ```
