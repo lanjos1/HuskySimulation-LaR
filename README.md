@@ -38,6 +38,14 @@ Para não ter que dar source em todas as abas do terminal, entre no container um
 ```bash
 docker exec -it lar_noetic bash
 ```
+E injete as configurações automáticas no seu .bashrc:
+
+```bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "source /root/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "cd /root/catkin_ws" >> ~/.bashrc
+exit
+```
 
 
 
