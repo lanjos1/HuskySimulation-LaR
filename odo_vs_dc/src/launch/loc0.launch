@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+   <!-- Reduz o fluxo de mensagens do teleop para não sobrecarregar o sistema -->
+   <node pkg="topic_tools" type="throttle" name="throttle" args="messages /joy_teleop/cmd_vel 5.0 /cmd_vel"/>
+   
+   <!-- Seu nó principal de cálculo de odometria e Dead Reckoning -->
+   <node name="odo_vs_dr" pkg="odo_vs_dc" type="source.py"/>
+   
+   <!-- O script de trajetória XY foi removido para evitar atrasos na inicialização -->
+   <!-- <node name="trajetoria_realtime" pkg="odo_vs_dc" type="plot_trajectory_realtime.py" output="screen" /> -->
+   
+   <!-- Mantendo os gráficos temporais do rqt_plot que são mais leves -->
+   <node name="odo_vs_dr_plot_x" pkg="rqt_plot" type="rqt_plot" args="/gt/x /odo/x /dr/x /odo_husky/x" />
+   <node name="odo_vs_dr_plot_y" pkg="rqt_plot" type="rqt_plot" args="/gt/y /odo/y /dr/y /odo_husky/y" />
+   <node name="odo_vs_dr_plot_theta" pkg="rqt_plot" type="rqt_plot" args="/gt/z /odo/z /dr/z /odo_husky/z" />
+</launch>
