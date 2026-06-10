@@ -20,3 +20,26 @@ catkin_ws/
 - Ubuntu (com suporte a interface gráfica)
 - Docker instalado
 - Container Docker configurado com ROS Noetic e Gazebo (lar_noetic)
+
+# Como Rodar o Projeto
+
+## Preparação do Ambiente (No Host)
+
+Antes de iniciar o container, libere a permissão de tela para o Docker (interface gráfica) e certifique-se de que o container está ativo:
+
+```bash
+xhost +local:docker
+docker start lar_noetic
+```
+## Otimização do Terminal (Opcional - Apenas na primeira vez)
+
+Para não ter que dar source em todas as abas do terminal, entre no container uma vez:
+
+```bash
+docker exec -it lar_noetic bash
+```
+
+
+
+
+
