@@ -62,7 +62,7 @@ Enter the container and execute the node responsible for data processing and plo
 docker exec -it lar_noetic bash
 roslaunch odo_vs_dc loc0.launch
 ```
-Terminal 3: Play Data (Rosbag)
+## Terminal 3: Play Data (Rosbag)
 
 Enter the container, navigate to the package folder, and play the recorded sensor data from the real robot:
 
