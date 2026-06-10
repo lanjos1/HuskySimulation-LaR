@@ -74,28 +74,28 @@ rosbag play husky_odom_real.bag
 
 ---
 
-### 🛠️ Git Commands (Translated Guide)
+## 🛠️ Git Commands (Translated Guide)
 
 If you are setting up the repository from your local machine terminal:
 
-# 1. Initialize git in your local folder
+### 1. Initialize git in your local folder
 ```bash
 git init
 ```
-# 2. (Optional) Ignore the heavy rosbag file to prevent GitHub upload blocks
+### 2. (Optional) Ignore the heavy rosbag file to prevent GitHub upload blocks
 ```bash
 echo "odo_vs_dc/husky_odom_real.bag" >> .gitignore
 ```
-# 3. Create and paste the English README content above
+### 3. Create and paste the English README content above
 ```bash
 nano README.md
 ```
-# 4. Commit your files
+### 4. Commit your files
 ```bash
 git add .
 git commit -m "Initial commit: adding lar_gazebo and odo_vs_dc packages"
 ```
-# 5. Link to your GitHub repository and push
+### 5. Link to your GitHub repository and push
 ```bash
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
