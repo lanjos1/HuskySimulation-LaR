@@ -11,7 +11,7 @@ catkin_ws/
     ├── lar_gazebo/      # Gazebo simulation environment
     └── odo_vs_dc/       # Control logic, odometry, and graphics/plotting
 ```
-# Prerequisites
+## Prerequisites
 
 - Ubuntu (with GUI support enabled)
 - Docker installed
